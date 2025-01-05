@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <title>Sign-up Form Example</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="bgImg">
+        <p class="logoMain">BOGUS</p>
+        <img
+          src="https://images.unsplash.com/photo-1469259943454-aa100abba749?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <p class="credits">
+          Photo by
+          <a href="https://unsplash.com/@ethanrobertson">Ethan Robertson</a> 
+          on
+          <a
+            href="https://unsplash.com/photos/selective-focus-photography-of-pink-petaled-flower-P86-JPbDnPY">Unsplash</a>
+        </p>
+      </div>
+      <div class="main">
+        <div class="intro">
+          <p class="intro1">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. <br />
+            Sign up <em>now</em> to get started.
+          </p>
+          <p class="intro2">You <em>know</em> you want to.</p>
+        </div>
+        <form action="#" class="form" method="POST">
+          <p class="caption">Let's get started!</p>
+          <div class="form-container">
+            <div class="left">
+              <p>
+                <label for="first-name">FIRST NAME</label><br />
+                <input
+                  type="text"
+                  id="first-name"
+                  name="user_first-name"
+                  required
+                />
+              </p>
+              <p>
+                <label for="email">EMAIL</label><br />
+                <input type="email" id="email" name="user_email" required />
+              </p>
+              <p>
+                <label for="password">PASSWORD</label><br />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  minlength="8"
+                  required
+                />
+              </p>
+            </div>
+            <div class="right">
+              <p>
+                <label for="last-name">LAST NAME</label><br />
+                <input
+                  type="text"
+                  id="last-name"
+                  name="user_last-name"
+                  required
+                />
+              </p>
+              <p>
+                <label for="phone">PHONE NUMBER</label><br />
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  required
+                />
+              </p>
+              <p>
+                <label for="confirm-password">CONFIRM PASSWORD</label><br />
+                <input
+                  type="password"
+                  name="confirm-password"
+                  id="confirm-password"
+                  minlength="8"
+                  required
+                />
+              </p>
+            </div>
+          </div>
+        </form>
+        <div class="signUp">
+          <button class="createAccButton">Create Account</button>
+          <p>Already have an account? <a href="#" class="logIn">Log in</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
