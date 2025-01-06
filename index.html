@@ -10,16 +10,18 @@
   <body>
     <div class="container">
       <div class="bgImg">
-        <p class="logoMain">BOGUS</p>
+        <p class="logoMain">Elysium</p>
         <img
           src="https://images.unsplash.com/photo-1469259943454-aa100abba749?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         />
         <p class="credits">
           Photo by
-          <a href="https://unsplash.com/@ethanrobertson">Ethan Robertson</a> 
+          <a href="https://unsplash.com/@ethanrobertson">Ethan Robertson</a>
           on
           <a
-            href="https://unsplash.com/photos/selective-focus-photography-of-pink-petaled-flower-P86-JPbDnPY">Unsplash</a>
+            href="https://unsplash.com/photos/selective-focus-photography-of-pink-petaled-flower-P86-JPbDnPY"
+            >Unsplash</a
+          >
         </p>
       </div>
       <div class="main">
@@ -31,7 +33,7 @@
           </p>
           <p class="intro2">You <em>know</em> you want to.</p>
         </div>
-        <form action="#" class="form" method="POST">
+        <form action="#" method="POST" id="form">
           <p class="caption">Let's get started!</p>
           <div class="form-container">
             <div class="left">
@@ -41,12 +43,19 @@
                   type="text"
                   id="first-name"
                   name="user_first-name"
+                  placeholder="John"
                   required
                 />
               </p>
               <p>
                 <label for="email">EMAIL</label><br />
-                <input type="email" id="email" name="user_email" required />
+                <input
+                  type="email"
+                  id="email"
+                  name="user_email"
+                  placeholder="you@example.com"
+                  required
+                />
               </p>
               <p>
                 <label for="password">PASSWORD</label><br />
@@ -66,6 +75,7 @@
                   type="text"
                   id="last-name"
                   name="user_last-name"
+                  placeholder="Doe"
                   required
                 />
               </p>
@@ -76,6 +86,7 @@
                   name="phone"
                   id="phone"
                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  placeholder="123-456-7890"
                   required
                 />
               </p>
@@ -93,7 +104,9 @@
           </div>
         </form>
         <div class="signUp">
-          <button class="createAccButton">Create Account</button>
+          <button type="submit" form="form" class="createAcc">
+            Create Account
+          </button>
           <p>Already have an account? <a href="#" class="logIn">Log in</a></p>
         </div>
       </div>
