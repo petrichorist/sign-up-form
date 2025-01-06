@@ -139,8 +139,3 @@ input:focus {
   font-weight: 700;
   text-decoration: none;
 }
-
-#password,
-#confirm-password {
-  border: 2px solid #d03400;
-}
