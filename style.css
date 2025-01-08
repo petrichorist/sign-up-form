@@ -88,6 +88,9 @@ input:focus {
   background-color: #00000080;
   font-family: 'Gotico-Antiqua';
   font-size: 160px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   position: absolute;
   box-shadow: 10px 0px 30px -10px #000;
 }
